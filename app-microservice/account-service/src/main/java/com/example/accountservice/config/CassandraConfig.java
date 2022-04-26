@@ -11,7 +11,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @Configuration
-public class CassandraConfiguration extends AbstractCassandraConfiguration {
+public class CassandraConfig extends AbstractCassandraConfiguration {
 
     public static final String KEYSPACE="springcloud";
 

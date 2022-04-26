@@ -1,6 +1,5 @@
 package com.example.accountservice.entity;
 
-import com.datastax.oss.driver.api.core.type.DataType;
 import lombok.*;
 import org.springframework.data.cassandra.core.mapping.CassandraType;
 import org.springframework.data.cassandra.core.mapping.Column;
