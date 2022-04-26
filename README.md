@@ -1,6 +1,6 @@
 # spring-cloud-microservice-training-project
-# Mikroservis mimarisini kullanmanın avantajları, dezavantajları nelerdir. 
-Bir mikroservis ten beklediğimiz belli yetenekler vardır, bunlar.
+# Mikroservis mimarisini kullanmanın avantajları, dezavantajları nelerdir?
+Bir mikroservis ten beklediğimiz belli yetenekler vardır, bunlar;
 - Ölçeklenebilirlik
 - Esneklik
 - CI/CD süreci
