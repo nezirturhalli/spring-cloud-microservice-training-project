@@ -1,13 +1,13 @@
 server:
   port: 8888
 spring:
+  main:
+    banner-mode: off
   application:
     name: config-server
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/nezirturhalli/spring-cloud-microservice-training-project/blob/ef55fd0655099f9899b65ab4216f5727c4a20968/app-microservice/config-repo
-          search-paths:
-            - app-microservice
+          uri: https://github.com/nezirturhalli/config-repo
 
