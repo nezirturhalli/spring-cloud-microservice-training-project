@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="account-service" />
         <module name="config-server" />
+        <module name="eureka-discovery-server" />
       </profile>
     </annotationProcessing>
   </component>
