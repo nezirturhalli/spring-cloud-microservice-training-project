@@ -13,7 +13,7 @@ import java.util.List;
 @Configuration
 public class CassandraConfig extends AbstractCassandraConfiguration {
 
-    public static final String KEYSPACE="springcloud";
+    public static final String KEYSPACE="db_account";
 
     @Override
     public SchemaAction getSchemaAction() {

@@ -8,6 +8,14 @@ spring:
   mvc:
     servlet:
       path: /api/v1
+
+  data:
+    cassandra:
+      contact-points:
+        - ${CASSANDRA_SERVER_HOST:localhost}
+      port: ${CASSANDRA_SERVER_PORT:9042}
+      keyspace-name: ${CASSANDRA_SERVER_KEYSPACE:db_account}
+      schema-action: create_if_not_exists
 eureka:
   instance:
     hostname: localhost
@@ -16,14 +24,6 @@ eureka:
       defaultZone: http://localhost:7970/eureka/
     fetch-registry: true
     register-with-eureka: true
-
-  data:
-    cassandra:
-      contact-points:
-        - ${CASSANDRA_SERVER_HOST:localhost}
-      port: ${CASSANDRA_SERVER_PORT:9042}
-      keyspace-name: ${CASSANDRA_SERVER_KEYSPACE:springcloud}
-      schema-action: create_if_not_exists
 springdoc:
   swagger-ui:
     path: /swagger-ui.html

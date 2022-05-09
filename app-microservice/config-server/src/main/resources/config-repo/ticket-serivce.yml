@@ -1,0 +1,39 @@
+server:
+  port: 7070
+  servlet:
+    context-path: /ticket
+  error:
+    include-message: always
+spring:
+  application:
+    name: ticket-service
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+  mvc:
+    servlet:
+      path: /api/v1
+  datasource:
+    username: user
+    password: root
+    url: jdbc:mysql://localhost:3306/db_ticket
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:7970/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
