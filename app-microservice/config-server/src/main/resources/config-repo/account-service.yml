@@ -1,0 +1,29 @@
+server:
+  port: 7870
+  servlet:
+    context-path: /account
+spring:
+  application:
+    name: account-service
+  mvc:
+    servlet:
+      path: /api/v1
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:7970/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+
+  data:
+    cassandra:
+      contact-points:
+        - ${CASSANDRA_SERVER_HOST:localhost}
+      port: ${CASSANDRA_SERVER_PORT:9042}
+      keyspace-name: ${CASSANDRA_SERVER_KEYSPACE:springcloud}
+      schema-action: create_if_not_exists
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
