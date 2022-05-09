@@ -15,5 +15,5 @@ public interface AccountService {
 
     AccountDto updateAccount(String id, AccountDto account);
 
-    List<AccountDto> findAll(Pageable pageable);
+    List<AccountDto> findAll();
 }

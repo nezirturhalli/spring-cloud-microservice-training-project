@@ -3,10 +3,6 @@ G
 account-service/HELP.md,d\5\d5fe07ef2fc2fceb688605d9c9a3857d565131ca
 B
 docker-compose.yml,3\5\35b8c13cf2eb2a194eada000eb310d65aed53b2a
-‡
-Waccount-service/src/main/java/com/example/accountservice/AccountServiceApplication.java,b\5\b5d3d57abb6e3ec1448ed30171d3b50e46d58d8e
-|
-Laccount-service/src/main/java/com/example/accountservice/entity/Account.java,f\4\f472bbbcb0bbf83b4f3612a0b7ebf4af331125f1
 E
 config-server/HELP.md,e\b\ebaba7304a3b512ab5a115bf99b72523e79690e8
 G
@@ -15,3 +11,5 @@ G
 Taccount-service/src/main/java/com/example/accountservice/config/CassandraConfig.java,a\3\a39d1bdb86e537ec18802709523b8092a3a4d989
 O
 config-server/config-client.yml,1\a\1afed943c001198ee0719d8dc94b7b80eb288a2b
+‡
+Waccount-service/src/main/java/com/example/accountservice/AccountServiceApplication.java,b\5\b5d3d57abb6e3ec1448ed30171d3b50e46d58d8e

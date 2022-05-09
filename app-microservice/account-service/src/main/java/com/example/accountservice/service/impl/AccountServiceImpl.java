@@ -42,7 +42,7 @@ public class AccountServiceImpl implements AccountService {
     @Override
     @Transactional
     public AccountDto updateAccount(String id, AccountDto accountDto) {
-        Assert.isNull(id, "Id cannot be  null");
+//        Assert.isNull(id, "Id cannot be  null");
         var acc = accountRepository.findById(id);
         var savingAcc = acc.map(account -> {
             account.setUsername(accountDto.getUsername());
@@ -55,8 +55,8 @@ public class AccountServiceImpl implements AccountService {
     }
 
     @Override
-    public List<AccountDto> findAll(Pageable pageable) {
-        var accounts = accountRepository.findAll(pageable);
+    public List<AccountDto> findAll() {
+        var accounts = accountRepository.findAll();
         return accounts.stream()
                 .map(acc -> modelMapper.map(acc, AccountDto.class))
                 .collect(Collectors.toList());

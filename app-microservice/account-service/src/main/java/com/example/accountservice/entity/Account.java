@@ -1,6 +1,7 @@
 package com.example.accountservice.entity;
 
 import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.cassandra.core.mapping.CassandraType;
 import org.springframework.data.cassandra.core.mapping.Column;
 import org.springframework.data.cassandra.core.mapping.PrimaryKey;
@@ -8,6 +9,7 @@ import org.springframework.data.cassandra.core.mapping.Table;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.UUID;
 
 @Getter
@@ -32,7 +34,7 @@ public class Account implements Serializable {
     private String password;
 
     @Column(value = "created_at")
-    @CassandraType(type = CassandraType.Name.DATE)
+    @CreatedDate
     private LocalDateTime createdAt;
 
     @Column(value = "is_active")

@@ -25,8 +25,8 @@ public class AccountRestController {
     }
 
     @GetMapping
-    public ResponseEntity<List<AccountDto>> getAccounts(Pageable pageable) {
-        return ResponseEntity.ok(accountService.findAll(pageable));
+    public ResponseEntity<List<AccountDto>> getAccounts() {
+        return ResponseEntity.ok(accountService.findAll());
     }
 
     @PostMapping
