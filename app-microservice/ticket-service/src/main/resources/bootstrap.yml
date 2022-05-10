@@ -1,4 +1,6 @@
 spring:
+  profiles:
+    active: ${PROFILE:DEV}
   application:
     name: ticket-service
   cloud:

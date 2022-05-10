@@ -18,8 +18,8 @@
   <name>app-microservice</name>
 
   <properties>
-    <maven.compiler.source>11</maven.compiler.source>
-    <maven.compiler.target>11</maven.compiler.target>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
     <spring.boot.maven.plugin.version>2.6.5</spring.boot.maven.plugin.version>
     <spring.boot.dependecies.version>2.6.5</spring.boot.dependecies.version>
     <spring.cloud-version>2021.0.1</spring.cloud-version>

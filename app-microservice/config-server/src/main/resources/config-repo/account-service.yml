@@ -17,11 +17,9 @@ spring:
       keyspace-name: ${CASSANDRA_SERVER_KEYSPACE:db_account}
       schema-action: create_if_not_exists
 eureka:
-  instance:
-    hostname: localhost
   client:
     service-url:
-      defaultZone: http://localhost:7970/eureka/
+      defaultZone: http://localhost:7970/eureka
     fetch-registry: true
     register-with-eureka: true
 springdoc:
