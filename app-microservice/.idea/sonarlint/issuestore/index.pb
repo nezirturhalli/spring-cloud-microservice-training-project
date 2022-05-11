@@ -29,15 +29,5 @@ O
 Waccount-service/src/main/java/com/example/accountservice/AccountServiceApplication.java,b\5\b5d3d57abb6e3ec1448ed30171d3b50e46d58d8e
 ”
 deureka-discovery-server/src/main/java/com/example/eurekaserver/EurekaDiscoveryServerApplication.java,6\b\6b977d0a31ea2c5033dd961344d3b3dca15c634f
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-„
-Tticket-service/src/main/java/com/example/ticketservice/TicketServiceApplication.java,3\9\391e67f3c02b396ff7cf0ca5a9b7c68eb7edf6ca
 B
 docker-compose.yml,3\5\35b8c13cf2eb2a194eada000eb310d65aed53b2a
-E
-config-server/pom.xml,a\2\a2f9618c8ad821b143a07a29a9805fcb0b2df470
-F
-ticket-service/pom.xml,5\1\51a4c59ed9e767804980c24924d0f9393daf3a94
-G
-account-service/pom.xml,a\f\afaf327a6435d2b8827595dd09405e8490f29529
